@@ -4,3 +4,11 @@ body{
     background-color: green;
     font-family: 'Roboto', sans-serif;
 }
+
+ul {
+    list-style-type: none;
+  }
+
+.pie {
+    text-align: center;
+}
