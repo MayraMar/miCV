@@ -1,0 +1,40 @@
+$back-col-all: grey;
+$side-col1: blue;
+$side-col2: turquoise;
+$bac-col-cv: pink;
+$col-titles: darken($side-col1,20);
+
+@mixin redes(){
+    font-size: 2rem;
+    color:$col-titles;
+    padding: 1rem;
+    &:hover{
+        color:white;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body{
+    background-color: #FBF1F6;
+}
+
+.container{
+    width: 100vw;
+    max-width: 1200px;
+    margin: auto;
+}
+
+html{
+    padding:0px;
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+
+}
