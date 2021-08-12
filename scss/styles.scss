@@ -1,8 +1,9 @@
-$back-col-all: grey;
-$side-col1: blue;
-$side-col2: turquoise;
-$bac-col-cv: pink;
-$col-titles: darken($side-col1,20);
+$back-col-all: #9F8989;
+$med-col:#D3E0EA;
+$dark-col: #7B113A;
+$light-col: #FFF5FD;
+$grey-col: #A4BBCD;
+
 
 @mixin redes(){
     font-size: 2rem;
@@ -13,8 +14,7 @@ $col-titles: darken($side-col1,20);
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -22,19 +22,98 @@ $col-titles: darken($side-col1,20);
     list-style: none;
 }
 
-body{
-    background-color: #FBF1F6;
-}
 
-.container{
-    width: 100vw;
-    max-width: 1200px;
-    margin: auto;
-}
 
 html{
-    padding:0px;
-    margin:0px;
-    font-family: 'Roboto', sans-serif;
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
 
 }
+
+body{
+    background-color:$back-col-all;
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 85vw;
+        max-width: 1200px;
+        
+        margin-top: 3rem;
+        display: flex;
+        aside{
+            width: 35%;
+            padding: 4rem 2rem;
+            text-align: center;
+            color: $light-col;
+            background-color: $dark-col;
+            img{
+                border-radius: 50%;
+                width:80%;
+            }
+            .name{
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.6rem;
+                padding: 1.2rem 0 0.5rem 0;
+                letter-spacing: 0.1rem;
+            }
+            h6{
+                padding-bottom: 1rem;
+                font-size: 1rem;
+                font-weight: normal;
+            }
+
+            ul.contact{
+                text-align: left;
+                padding: 0.7rem 0 1rem 0.7rem;
+                li{
+                    padding-bottom: 0.4rem;
+                }
+            }
+            div.redes{
+                display: flex;
+                justify-content: space-evenly;
+                    li{
+                        
+                        display: inline-block;
+                        padding: 0.8rem;
+                        a{
+                            color:$light-col;
+                            text-decoration: none;
+
+                        }
+                    }
+                
+            }
+            h3{
+                text-transform: uppercase;
+                font-size: 1.3rem;
+                padding:0.7rem 0;
+            }
+            div.educ{
+                text-align: left;
+                p.tit{
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    
+                }
+                p.date{
+                    color: $grey-col;
+                    padding-bottom:0.7rem;
+                }
+            }
+            div.lang{
+                text-align: left;
+                padding:1rem 0;
+            }
+        }
+        section{
+            width: 65%;
+            background-color: $light-col;
+            padding: 3rem 2rem;
+
+        }
+    }
+}
+
