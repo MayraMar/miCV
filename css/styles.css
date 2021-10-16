@@ -9,7 +9,7 @@
 
 html {
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body {
@@ -74,6 +74,13 @@ body .container aside div.redes {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  font-size: 1.4rem;
+  color: #D3E0EA;
+  padding: 0.4rem;
+}
+
+body .container aside div.redes a:hover {
+  color: grey-col;
 }
 
 body .container aside div.redes li {
@@ -115,5 +122,44 @@ body .container section {
   width: 65%;
   background-color: #FFF5FD;
   padding: 3rem 2rem;
+}
+
+body .container section article {
+  padding-bottom: 1rem;
+}
+
+body .container section article h2 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+}
+
+body .container section article p {
+  text-align: justify;
+  padding-bottom: 0.7rem;
+}
+
+body .container section article .place {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-bottom: 0.6rem;
+}
+
+body .container section article .pos, body .container section article .descr {
+  padding-left: 1.3rem;
+}
+
+body .container section article .position {
+  font-weight: bold;
+}
+
+body .container section article .dates {
+  color: #567d9c;
+}
+
+@media (max-width: 568px) {
+  body .container aside {
+    background-color: green;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

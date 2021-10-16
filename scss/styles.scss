@@ -6,12 +6,13 @@ $grey-col: #A4BBCD;
 
 
 @mixin redes(){
-    font-size: 2rem;
-    color:$col-titles;
-    padding: 1rem;
-    &:hover{
-        color:white;
+    font-size: 1.4rem;
+    color:$med-col;
+    padding: 0.4rem;
+    a{ &:hover{
+        color:grey-col;
     }
+}
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
@@ -27,7 +28,7 @@ $grey-col: #A4BBCD;
 html{
     
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 
 }
 
@@ -74,6 +75,7 @@ body{
             div.redes{
                 display: flex;
                 justify-content: space-evenly;
+                @include redes;
                     li{
                         
                         display: inline-block;
@@ -81,10 +83,9 @@ body{
                         a{
                             color:$light-col;
                             text-decoration: none;
-
                         }
                     }
-                
+            
             }
             h3{
                 text-transform: uppercase;
@@ -112,8 +113,47 @@ body{
             width: 65%;
             background-color: $light-col;
             padding: 3rem 2rem;
+            article {
+                padding-bottom: 1rem;
+                h2{
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                    padding-bottom: 0.5rem;
+                }
+                p{
+                    text-align: justify;
+                    padding-bottom:0.7rem;
+                }
+                .place{
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    padding-bottom: 0.6rem;
+                }
+                .pos, .descr{
+                    padding-left: 1.3rem;
+                }
+                .position{
+                    font-weight:bold;
+                }
+                .dates{
+                    color: darken($grey-col,25%);
+                    
+                }
+            }
 
         }
     }
 }
+
+@media (max-width: 568px){
+    body{
+    .container{
+        aside{
+            background-color: green;
+        }
+    }
+}
+    }
+
+
 
