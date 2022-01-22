@@ -84,7 +84,7 @@ body .container aside div.redes {
 }
 
 body .container aside div.redes a:hover {
-  color: grey-col;
+  font-size: 2rem;
 }
 
 body .container aside div.redes li {

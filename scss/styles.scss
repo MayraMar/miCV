@@ -13,7 +13,8 @@ $grey-col: #cfb3d4;
     color:$med-col;
     padding: 0.4rem;
     a{ &:hover{
-        color:grey-col;
+        //color:$back-col-all;
+        font-size: 2rem;
     }
 }
 }
