@@ -45,7 +45,6 @@ body{
     .container{
         width: 85vw;
         max-width: 1200px;
-        
         margin-top: 3rem;
         display: flex;
         aside{
@@ -176,11 +175,21 @@ body{
     }
 }
 
-@media (max-width: 568px){
+@media (max-width: 800px){
+    html {
+        font-size: 12px;
+    }
     body{
     .container{
+        margin-top: 1.5rem;
+        width: 95vw;
         aside{
-            background-color: green;
+            padding: 2rem 1rem;
+        }
+        section{
+            article{
+                padding-right: 1rem;
+            }
         }
     }
 }
