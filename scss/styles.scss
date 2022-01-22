@@ -176,24 +176,49 @@ body{
 }
 
 @media (max-width: 800px){
-    html {
-        font-size: 12px;
+    html{
+        font-size: 11px;
     }
     body{
-    .container{
-        margin-top: 1.5rem;
-        width: 95vw;
-        aside{
-            padding: 2rem 1rem;
-        }
-        section{
-            article{
-                padding-right: 1rem;
+        .container{
+            margin-top: 1.5rem;
+            width: 95vw;
+            aside{
+                padding: 2rem 1rem;
+                .name{
+                font-size: 1.4rem;
+                }
+            }
+            section{
+                article{
+                    padding-right: 1rem;
+                }
             }
         }
     }
 }
+
+@media (max-width: 530px){
+    body{
+        .container{
+            margin-top: 3rem;
+            flex-direction: column;
+            aside{
+                padding: 2rem 2rem;
+                width: 100%;
+                .name{
+                    font-size: 1.8rem;
+                    }
+            }
+            section{
+                width: 100%;
+                article{
+                    padding-right: 2rem;
+                }
+            }
+        }
     }
+}
 
 
 

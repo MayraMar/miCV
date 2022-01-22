@@ -190,7 +190,7 @@ body .container section footer {
 
 @media (max-width: 800px) {
   html {
-    font-size: 12px;
+    font-size: 11px;
   }
   body .container {
     margin-top: 1.5rem;
@@ -199,8 +199,34 @@ body .container section footer {
   body .container aside {
     padding: 2rem 1rem;
   }
+  body .container aside .name {
+    font-size: 1.4rem;
+  }
   body .container section article {
     padding-right: 1rem;
+  }
+}
+
+@media (max-width: 530px) {
+  body .container {
+    margin-top: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container aside {
+    padding: 2rem 2rem;
+    width: 100%;
+  }
+  body .container aside .name {
+    font-size: 1.8rem;
+  }
+  body .container section {
+    width: 100%;
+  }
+  body .container section article {
+    padding-right: 2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
