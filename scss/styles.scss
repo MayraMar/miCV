@@ -1,8 +1,11 @@
-$back-col-all: #9F8989;
+//$back-col-all: #9F8989;
+$back-col-all: #696769;
 $med-col:#D3E0EA;
-$dark-col: #7B113A;
+//$dark-col: #7B113A;
+$dark-col: rgb(184, 84, 107);
 $light-col: #FFF5FD;
-$grey-col: #A4BBCD;
+$grey-col: #cfb3d4;
+//$grey-col: #A4BBCD;
 
 
 @mixin redes(){
@@ -21,6 +24,9 @@ $grey-col: #A4BBCD;
     margin: 0px;
     padding: 0px;
     list-style: none;
+    a{
+        text-decoration: none;
+    }
 }
 
 
@@ -103,10 +109,19 @@ body{
                     color: $grey-col;
                     padding-bottom:0.7rem;
                 }
+                p{
+                    padding-left: 1rem;
+                }
             }
             div.lang{
                 text-align: left;
-                padding:1rem 0;
+                padding:1rem 0rem;
+                li{
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    padding-left: 1rem;
+                    padding-bottom: 0.5rem;
+                }
             }
         }
         section{
@@ -115,6 +130,7 @@ body{
             padding: 3rem 2rem;
             article {
                 padding-bottom: 1rem;
+                padding-right: 3rem;
                 h2{
                     font-weight: bold;
                     font-size: 1.4rem;
@@ -122,12 +138,12 @@ body{
                 }
                 p{
                     text-align: justify;
-                    padding-bottom:0.7rem;
+                    padding-bottom:0.9rem;
                 }
                 .place{
                     font-size: 1.1rem;
                     font-weight: bold;
-                    padding-bottom: 0.6rem;
+                    padding-bottom: 0.2rem;
                 }
                 .pos, .descr{
                     padding-left: 1.3rem;
@@ -137,8 +153,23 @@ body{
                 }
                 .dates{
                     color: darken($grey-col,25%);
+                    font-weight: normal;
+                    padding-right: 2rem;
+                    
                     
                 }
+                .act{
+                    padding-right: 0.6rem;
+                }
+                
+                .bold{
+                        font-weight: bold;
+                }
+                
+            }
+            footer{
+                padding-top:4rem;
+                text-align: center;
             }
 
         }
