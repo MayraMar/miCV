@@ -71,6 +71,10 @@ body .container aside ul.contact li {
   padding-bottom: 0.4rem;
 }
 
+body .container aside ul.contact li.linked {
+  padding-top: 0.8rem;
+}
+
 body .container aside div.redes {
   display: -webkit-box;
   display: -ms-flexbox;
