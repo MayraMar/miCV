@@ -183,6 +183,10 @@ body .container section article .bold {
   font-weight: bold;
 }
 
+body .container section article .projects {
+  margin-left: 1.3rem;
+}
+
 body .container section footer {
   padding-top: 4rem;
   text-align: center;
